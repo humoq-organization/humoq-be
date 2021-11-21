@@ -19,7 +19,7 @@ spec:
       containers:
         - name: humoq-be
           image: humoq/humoq-be:latest
-          imagePullPolicy: "Always"
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
 ---
