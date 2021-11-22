@@ -1,8 +1,8 @@
 export const convertToSlug = (Text) => {
-    return Text
+    return Text?
         .toLowerCase()
-        .replace(/ /g, '-')
-        .replace(/[^\w-]+/g, '');
+        ?.replace(/ /g, '-')
+        ?.replace(/[^\w-]+/g, '');
 }
 
 export const shuffle = (array) => {
