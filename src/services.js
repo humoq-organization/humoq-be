@@ -23,7 +23,7 @@ class ApiService {
     }
 
     async search(search) {
-        const find = data?.filter(i => i?.Title?.toLowerCase()?.indexOf(search) !== -1);
+        const find = data?.filter(i => i?.Title?.toLowerCase()?.indexOf(search?.toLowerCase()) !== -1);
         
         return serializeData(find);
     }
