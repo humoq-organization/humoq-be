@@ -39,7 +39,6 @@ class ApiService {
     
         return {data: serializeData(findData), category: serializeData(shuffle(data?.slice(0, 120)))};
     }
-
     async updateData() {
         let counter = 1;
         let isGo = true;
